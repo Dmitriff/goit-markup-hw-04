@@ -605,20 +605,22 @@ footer .logo {
 .connektion {
   font-style: normal;
 }
-
-.dark-bg .container {
-  display: block;
-}
-
 .footer-test {
   display: inline-block;
   vertical-align: text-top;
+  align-items: center;
 }
-.footer-test:not(:last-child) {
-  margin-right: 70px;
+
+.footer-test:not(:first-child) {
+  margin-left: 70px;
 }
-.footer-icon {
+.social-page {
   padding-top: 12px;
+}
+
+.compani-social-icons {
+  display: inline-flex;
+  padding-left: 0;
 }
 .social-icon {
   display: inline-flex;
@@ -638,6 +640,7 @@ footer .logo {
   justify-content: center;
 }
 .social-footer {
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
