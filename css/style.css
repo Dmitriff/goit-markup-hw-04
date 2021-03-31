@@ -336,7 +336,6 @@ header {
   content: "";
   display: block;
   height: 120px;
-  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--premiry-bg-color);
@@ -558,11 +557,13 @@ header {
 
 /* address footer*/
 .dark-bg {
-  display: flex;
-
   background: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.dark-bg .container {
+  align-items: baseline;
+  justify-content: flex-start;
 }
 .test .list {
   color: var(--bg-color-text);
@@ -570,7 +571,7 @@ header {
 }
 
 .dark-bg .container {
-  align-items: center;
+  display: flex;
   justify-content: flex-start;
 }
 .connektion .list {
@@ -612,19 +613,13 @@ footer .logo {
 .connektion {
   font-style: normal;
 }
-.footer-test {
-  display: inline;
-}
+
 .footer-social {
-  display: inline;
+  margin-bottom: 0;
 }
-/*.footer-test:not(:first-child) {
+.footer-social:not(:first-child) {
   margin-left: 70px;
-}*/
-/*.social-page {
-  margin-left: 70px;
-  padding-top: 12px;
-}*/
+}
 
 .compani-social-icons {
   display: inline-flex;
