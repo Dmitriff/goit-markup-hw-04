@@ -148,10 +148,13 @@ header {
 
 .contacts {
   display: inline-flex;
+  align-items: baseline;
+  padding-left: 0;
+  margin-bottom: 0;
 }
+
 .contacts .icon {
-  width: 16px;
-  height: 12px;
+  fill: var(--list-text-color);
   margin-right: 10px;
 }
 .contacts-link:hover .icon,
@@ -160,7 +163,8 @@ header {
 }
 
 .contacts .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -169,7 +173,6 @@ header {
   line-height: 1.14;
   text-decoration: none;
 }
-
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
@@ -179,12 +182,11 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .social-icons {
   display: inline-flex;
   margin-left: 0;
   padding-left: 0;
-  padding-bottom: 30px;
+  margin-top: 16px;
 }
 .social-icons-item + .social-icons-item {
   margin-left: 10px;
@@ -229,7 +231,7 @@ header {
 }
 
 .hero {
-  max-width: 160opx;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -291,6 +293,7 @@ header {
 
 .filter-btn.link:hover,
 .filter-btn.link:focus {
+  box-shadow: var(--box-shadow);
   background-color: var(--accent-color);
   color: var(--white-color);
 }
@@ -482,6 +485,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 0;
 }
 
 .section team {
@@ -510,7 +514,10 @@ header {
 }
 
 /*compani*/
-
+.compani {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .clients {
   font-weight: 700;
   font-size: 36px;
@@ -518,13 +525,12 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .compani-icons {
   display: flex;
   text-align: center;
   padding-left: 0;
-  padding-bottom: 94px;
+
   margin-bottom: 0;
 }
 .compani-icons-item {
@@ -553,6 +559,7 @@ header {
 /* address footer*/
 .dark-bg {
   display: flex;
+
   background: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -606,17 +613,18 @@ footer .logo {
   font-style: normal;
 }
 .footer-test {
-  display: inline-block;
-  vertical-align: text-top;
-  align-items: center;
+  display: inline;
 }
-
-.footer-test:not(:first-child) {
+.footer-social {
+  display: inline;
+}
+/*.footer-test:not(:first-child) {
   margin-left: 70px;
-}
-.social-page {
+}*/
+/*.social-page {
+  margin-left: 70px;
   padding-top: 12px;
-}
+}*/
 
 .compani-social-icons {
   display: inline-flex;
@@ -634,11 +642,6 @@ footer .logo {
   fill: var(--accent-color);
 }
 
-.icon {
-  background-color: var(--bg-icon-footer);
-  align-items: center;
-  justify-content: center;
-}
 .social-footer {
   margin-bottom: 20px;
   font-weight: bold;
